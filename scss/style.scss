@@ -1,0 +1,22 @@
+$color-primary-0: #AA3939;	// Main Primary color */
+$color-primary-1: #FFC6C6;
+$color-primary-2: #DC7A7A;
+$color-primary-3: #780E0E;
+$color-primary-4: #460000;
+
+@mixin border-radius($deg) {
+    -moz-border-radius: $deg;
+    -webkit-border-radius: $deg;
+    border-radius: $deg;
+}
+
+body {
+    background-color: $color-primary-0;
+}
+.gameArea {
+    margin-top: 30px;
+    background-color: #fff;
+    height: calc(100vh - 60px);
+    @include border-radius(10px);
+    color: $color-primary-2;
+}
